@@ -1,0 +1,73 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+h1 svg {
+	fill: green;
+}
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+li ol img {
+	margin: -0.64em -3em;
+	width: 23.4375em;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+footer input {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1 black;
+	padding: 1.5em;
+}
+
+footer label, footer h2 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #1E1E1E;
+	font-weight: lighter;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+}
+
+footer svg {
+	width: 3%;
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.device {
+	display: flex;
+	justify-content: space-around;
+}
