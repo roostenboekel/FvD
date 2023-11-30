@@ -15,13 +15,14 @@
 /*********************/
 :root {
 	/* startje */
+	--color-logo:white;
 	--color-text:#111;
 	--color-background:#eee;
+	--text-footer: #1E1E1E;
+	--color-input-border: black;
 }
 
-h1 svg {
-	fill: green;
-}
+
 
 
 
@@ -30,44 +31,146 @@ h1 svg {
 /****************/
 
 /* jouw code */
-li ol img {
-	margin: -0.64em -3em;
-	width: 23.4375em;
+header {
+	display: flex;
+	align-items: center;
 }
+
+header svg {
+	display: flex;
+	justify-content: left;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	gap: .7em;
+}
+
+header nav svg {
+	width: 1em;
+	fill: var(--color-logo);
+}
+
+header > section:nth-of-type(1) {
+	margin-left: 3.5em;
+}
+
+header nav a {
+	text-decoration: none;
+}
+
+h1 svg {
+	width: 5em;
+	fill: var(--color-logo);
+}
+
+li {
+	list-style-type: none;
+}
+
+/* hulp van elaine */
+li ol img {
+	position: relative;
+	margin: -0.64em -3em;
+	width: 100vw;
+	height: 100vh;
+	bottom: 5.9em;
+	z-index: -1;
+	object-fit: cover;
+}
+/*  */
 
 footer {
 	display: flex;
 	flex-direction: column;
+	margin-top: 8em;
+}
+
+footer form {
+	display: flex;
+	justify-content: center;
 }
 
 footer input {
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1 black;
-	padding: 1.5em;
+	outline: 0;
+	border-width: 0 0 .10em;
+	border-color: var(--color-input-border);
+	text-transform: uppercase;
+	width: 27em;
+	font-size: .7em;
 }
 
-footer label, footer h2 {
+footer input, footer h2, footer a {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	color: #1E1E1E;
+	color: var(--text-footer);
 	font-weight: lighter;
-	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
+}
+
+footer a:nth-of-type(1) {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .7em;
+	margin-top: 2em;
+}
+
+footer a:nth-of-type(2), footer a:nth-of-type(3) {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .7em;
+	margin-top: 1.2em;
+}
+
+footer > h2:nth-of-type(1) {
+	font-size: .7em;
+	color: var(--text-footer);
+	margin-top: 4em;
+}
+
+footer > h2:nth-of-type(2) {
+	font-size: .7em;
+	color: var(--text-footer);
+	margin-top: -11em;
 }
 
 footer svg {
 	width: 3%;
 }
 
-.socials {
+footer > section:nth-of-type(1) {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1em;
+	margin-top: -9em;
 }
 
-.device {
+footer > section:nth-of-type(2) {
 	display: flex;
-	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	gap: 0.9em;
 }
+
+footer > section:nth-of-type(3) h2 {
+	font-size: .7em;
+	text-transform: uppercase;
+}
+
+footer > section:nth-of-type(3) {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	gap: .5em;
+	margin-top: 5em;
+}
+
+/* BRONNEN */
+
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email */
+/* https://stackoverflow.com/questions/37465458/input-text-field-with-only-bottom-border */

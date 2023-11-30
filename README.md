@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   blauw
 
   #### Je focus:
-  responsive
+  surface
  
 </details>
 
@@ -57,6 +57,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+    alleen maar divs
+    onlogische volgorde wanneer ik de voice-over aan deed
+    geen aria-label bij foto's
+    wel een heel toegankelijkheidsmenu waarbij je bijvoorbeeld kleuren en lettergrootte kan aanpassen
+    
 
 </details>
 
