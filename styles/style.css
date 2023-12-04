@@ -16,10 +16,16 @@
 :root {
 	/* startje */
 	--color-logo:white;
+	--color-logo-footer: black;
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:white;
 	--text-footer: #1E1E1E;
 	--color-input-border: black;
+}
+
+@font-face {
+	font-family: 'Lucida Grande';
+	src: local("Lucida Grande"), url("LucidaGrande.ttc");
 }
 
 
@@ -31,146 +37,325 @@
 /****************/
 
 /* jouw code */
+
+/* BODY */
+body {
+	margin:0;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* HEADER */
+
 header {
 	display: flex;
 	align-items: center;
+	gap: 0em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 1em 0 .2em;
 }
+
+header > button, header nav:nth-of-type(1) button {
+	padding: .5em;
+	appearance: none;
+	border: none;
+	border-radius: .25em;
+	color: transparent;
+}
+
+header nav:nth-of-type(1) button {
+	display: flex;
+	justify-self:start;
+	background-color: transparent;
+	padding-top: 1.5em;
+	padding-left: .8em;
+
+}
+
+header nav:nth-of-type(1) button svg {
+	stroke: var(--color-logo-footer);
+	width: 1em;
+}
+
+header nav:nth-of-type(1) a:nth-of-type(1) svg {
+	width: 10em;
+	fill: var(--color-logo-footer);
+}
+
+header nav:nth-of-type(1) a:nth-of-type(1) {
+	margin-top: 1.3em;
+}
+
+header nav:nth-of-type(1) {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: auto;
+
+	display: flex;
+	align-content: start;
+	gap: 1em;
+
+	background-color: var(--color-background);
+
+	position: fixed;
+
+	inset: 0;
+
+	translate: -100% 0;
+
+	transition: 1s;
+
+}
+
+header nav:nth-of-type(1).open {
+	translate: 0;
+}
+
+header nav:nth-of-type(1) ul {
+	position: absolute;
+	margin-top: 5em;
+	padding-left: 2em;
+	font-family: 'Lucida Grande', sans-serif;
+	color: var(--color-text);
+	list-style: none;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+}
+
+header nav:nth-of-type(1) ul a {
+	text-decoration: none;
+}
+
+header nav:nth-of-type(1).active {
+	font-weight: bold;
+} 
+
+header nav:nth-of-type(1) ul a:visited {
+	color: var(--color-text);
+}
+
+header nav:nth-of-type(1) ul li svg {
+	fill: var(--color-text);
+}
+
 
 header svg {
 	display: flex;
 	justify-content: left;
 }
 
-header nav {
+header nav:nth-of-type(3) {
 	display: flex;
 	align-items: center;
 	gap: .7em;
 }
 
-header nav svg {
+header nav:nth-of-type(3) svg {
 	width: 1em;
-	fill: var(--color-logo);
 }
 
 header > section:nth-of-type(1) {
-	margin-left: 3.5em;
+	margin-left: auto;
 }
 
-header nav a {
+header nav:nth-of-type(3) a {
 	text-decoration: none;
 }
 
-h1 svg {
+header > button {
+	border: none;
+	background-color: transparent;
+}
+
+header h1 svg {
 	width: 5em;
-	fill: var(--color-logo);
 }
 
-li {
-	list-style-type: none;
-}
 
-/* hulp van elaine */
-li ol img {
-	position: relative;
-	margin: -0.64em -3em;
-	width: 100vw;
-	height: 100vh;
-	bottom: 5.9em;
-	z-index: -1;
-	object-fit: cover;
-}
+
+/* MAIN */
+
+/* hulp van sanne */
+
 /*  */
 
+main section.mainfotos {
+	height: 100vh;
+}
+
+main section.mainfotos > ul {
+	height: 100%;
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: inline mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+main section.mainfotos > ul::-webkit-scrollbar {
+	display: none;
+}
+
+main section.mainfotos > ul li {
+	flex-basis: 100%;
+	flex-shrink: 0;
+	scroll-snap-align: center;
+}
+
+main section.mainfotos > ul li > img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+/* FOOTER */
+
+
 footer {
-	display: flex;
-	flex-direction: column;
-	margin-top: 8em;
+	min-height: 100vh;
+
+	display:grid;
+	align-content:center;
+	padding-top:20%;
+	
 }
 
-footer form {
-	display: flex;
-	justify-content: center;
+footer section {
+	display:grid;
+	justify-items:center;
+	margin-bottom: 3.7em;
 }
 
-footer input {
-	outline: 0;
-	border-width: 0 0 .10em;
-	border-color: var(--color-input-border);
-	text-transform: uppercase;
-	width: 27em;
-	font-size: .7em;
-}
 
-footer input, footer h2, footer a {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+footer input, 
+footer h2, 
+footer a {
+	font-family: 'Lucida Grande', sans-serif;
 	color: var(--text-footer);
 	font-weight: lighter;
-	display: flex;
-	justify-content: center;
-}
-
-footer a:nth-of-type(1) {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: .7em;
-	margin-top: 2em;
-}
-
-footer a:nth-of-type(2), footer a:nth-of-type(3) {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: .7em;
-	margin-top: 1.2em;
-}
-
-footer > h2:nth-of-type(1) {
-	font-size: .7em;
-	color: var(--text-footer);
-	margin-top: 4em;
-}
-
-footer > h2:nth-of-type(2) {
-	font-size: .7em;
-	color: var(--text-footer);
-	margin-top: -11em;
+	font-size: 1em;
 }
 
 footer svg {
-	width: 3%;
+	width: 1em;
+	height:1em;
 }
 
-footer > section:nth-of-type(1) {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: center;
-	gap: 1em;
-	margin-top: -9em;
+
+footer input {
+	outline: 0;
+	border-width: 0 0 .1em;
+	width: 18em;
+	border-color: var(--color-input-border);
+	
 }
 
-footer > section:nth-of-type(2) {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: center;
-	gap: 0.9em;
-}
-
-footer > section:nth-of-type(3) h2 {
-	font-size: .7em;
+footer input::placeholder {
 	text-transform: uppercase;
 }
 
-footer > section:nth-of-type(3) {
+footer section:nth-of-type(2) ul {
+	margin:0;
+	padding:0;
+	list-style: none;
+
 	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: center;
+	gap:.5em;
+}
+
+footer section:nth-of-type(3) nav {
+	display: flex;
 	gap: .5em;
-	margin-top: 5em;
+}
+
+footer section:nth-of-type(3) nav a {
+	text-decoration: none;
+}
+
+footer section:nth-of-type(4) {
+	display: grid;
+	justify-items: center;
+}
+
+footer section:nth-of-type(4) nav a {
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+footer section:nth-of-type(5) {
+	display: flex;
+	justify-content: center;
+}
+
+footer section:nth-of-type(5) h2 {
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+footer section:nth-of-type(5) button {
+	background-color: transparent;
+	border: none;
+}
+
+
+
+
+header h1 svg, 
+header nav:nth-of-type(3) svg, 
+header svg {
+	fill: var(--color-logo);
+}
+
+header nav:nth-of-type(3) button:nth-of-type(2) svg, 
+header nav:nth-of-type(3) a:nth-of-type(1) svg, 
+header nav:nth-of-type(3) a:nth-of-type(2) svg {
+	stroke: var(--color-logo);
+}
+
+
+
+/* logo */
+html.footerBeeld header h1 svg {
+	fill: var(--color-logo-footer);
+}
+
+/* hamburger */
+html.footerBeeld header > button svg {
+	fill: var(--color-logo-footer);
+}
+
+/* zoek icoon */
+html.footerBeeld header nav:nth-of-type(3) button:nth-of-type(1) svg {
+	fill: var(--color-logo-footer);
+}
+
+/* account, help en shoppping cart */
+html.footerBeeld header nav:nth-of-type(3) button:nth-of-type(2) svg, 
+html.footerBeeld header nav:nth-of-type(3) a:nth-of-type(1) svg, 
+html.footerBeeld header nav:nth-of-type(3) a:nth-of-type(2) svg {
+	stroke: var(--color-logo-footer);
 }
 
 /* BRONNEN */
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email */
 /* https://stackoverflow.com/questions/37465458/input-text-field-with-only-bottom-border */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face */
