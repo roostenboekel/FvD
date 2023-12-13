@@ -1,0 +1,410 @@
+/* BODY */
+body {
+    background-color: var(--color-background);
+}
+
+
+/* HEADER */
+header {
+    position: absolute;
+    display: flex;
+}
+
+
+/* header terug */
+header>a svg {
+    fill: var(--header-color-logo);
+    width: 1em;
+    padding-left: .4em;
+}
+
+
+/* header logo */
+header>h1 button svg {
+    fill: var(--header-color-logo);
+    width: 12em;
+}
+
+header>h1 button {
+    border: none;
+    background-color: transparent;
+    width: 3em;
+}
+
+
+/* header nav */
+/* header nav section:nth-of-type(1) {
+	display: flex;
+	align-items: center;
+	gap: .7em;
+} */
+
+
+/* header nav iconen */
+header section:nth-of-type(1) nav button svg,
+header section:nth-of-type(1) nav a:nth-of-type(1) svg {
+    fill: var(--header-color-logo);
+    width: 1em;
+}
+
+
+header section:nth-of-type(1) nav button {
+    border: none;
+    background-color: transparent;
+}
+
+header section:nth-of-type(1) nav a svg,
+header section:nth-of-type(1) nav button:nth-of-type(2) svg {
+    stroke: var(--header-color-logo);
+    width: 1em;
+}
+
+header nav:nth-of-type(1) section:nth-of-type(1) a {
+    text-decoration: none;
+}
+
+
+/* MAIN */
+main {
+    font-family: 'Lucida Grande', sans-serif;
+    color: var(--header-color-logo-footer);
+    letter-spacing: .05em;
+    z-index: 1;
+}
+
+
+/* paddenstoel foto's lijst */
+main section:nth-of-type(1).paddenstoelfotos>ul li a img {
+    width: 100%;
+}
+
+main section:nth-of-type(1).paddenstoelfotos>ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    left: 0;
+    list-style: none;
+    overflow: auto;
+    scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+main section:nth-of-type(1).paddenstoelfotos>ul li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+main section:nth-of-type(1).paddenstoelfotos>ul li>img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* favoriet button */
+main>button svg {
+    stroke: var(--header-color-logo-footer);
+}
+
+main>button {
+    position: absolute;
+    padding: 1em 1.3em;
+    display: flex;
+    top: 26em;
+    right: 1.5em;
+    border: none;
+    background-color: var(--color-background);
+    border-radius: 100%;
+    box-shadow: 0 0 .5em var(--main-shadow-color);
+    z-index: 5;
+}
+
+@keyframes hart-animation {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+main>button svg.zoom {
+    animation-name: hart-animation;
+    animation-duration: .5s;
+}
+
+
+/* h1 */
+main h1 {
+    font-size: 1.4em;
+    display: flex;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main article:nth-of-type(1) {
+    position: relative;
+    transform: translateY(-2em);
+    bottom: 0;
+    background-color: var(--main-wit-text);
+    border-top: .5em solid var(--main-wit-text);
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+
+/* h2 */
+main article>h2 {
+    /* font-size: 1em; */
+    text-transform: uppercase;
+}
+
+
+/* h2 prijs */
+main h2:nth-of-type(1) {
+    text-align: center;
+    margin: 0;
+}
+
+
+/* h3 btw */
+main h3:nth-of-type(1) {
+    font-size: .8em;
+    text-align: center;
+}
+
+
+/* li afmetingen */
+main article li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+main article li ol {
+    margin: 2em 1em 1em 1em;
+    padding: 0;
+    color: var(--main-lichte-text);
+}
+
+/* p productbeschrijving */
+main p {
+    font-size: 1em;
+    margin: 1em 1.5em;
+    padding: 0;
+}
+
+/* linkjes */
+main article section {
+    margin: 2em 0;
+}
+
+main article section a {
+    padding: .5em 0 .5em 1.5em;
+    text-decoration: none;
+    color: var(--main-color-text);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+}
+
+/* maak de look af tekst */
+main article section:nth-of-type(2),
+main article section:nth-of-type(4),
+main article section:nth-of-type(6) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 1.5em;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+main article section:nth-of-type(2) h2,
+main article section:nth-of-type(4) h2,
+main article section:nth-of-type(6) h2 {
+    font-size: .9em;
+    color: var(--main-color-text);
+}
+
+main article section:nth-of-type(2) h3,
+main article section:nth-of-type(4) h3,
+main article section:nth-of-type(6) h3 {
+    font-size: .7em;
+    color: var(--main-lichte-text);
+}
+
+
+/* maak de look af foto's */
+main article section:nth-of-type(3).maakaffotos>ul li a img {
+    width: 15em;
+}
+
+main article section:nth-of-type(3).maakaffotos>ul {
+    margin: 0;
+    padding: 0 1.5em;
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 2em;
+}
+
+main article section:nth-of-type(3).maakaffotos>ul li a p {
+    font-size: .7em;
+    margin: .5em 0 0 0;
+    padding: 0;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+}
+
+main article section:nth-of-type(3).maakaffotos>ul li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+main article section:nth-of-type(3).maakaffotos>ul li a:visited {
+    color: var(--main-color-text);
+}
+
+main article section:nth-of-type(3).maakaffotos>ul li a:hover {
+    color: var(--hover-iconen);
+}
+
+
+/* interesse foto's */
+main article section:nth-of-type(5).interessefotos>ul li a img {
+    width: 15em;
+}
+
+main article section:nth-of-type(5).interessefotos>ul {
+    margin: 0;
+    padding: 0 1.5em;
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 2em;
+}
+
+main article section:nth-of-type(5).interessefotos>ul li a p {
+    font-size: .7em;
+    margin: .5em 0 0 0;
+    padding: 0;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+}
+
+main article section:nth-of-type(5).interessefotos>ul li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+main article section:nth-of-type(5).interessefotos>ul li a:visited {
+    color: var(--main-color-text);
+}
+
+main article section:nth-of-type(5).interessefotos>ul li a:hover {
+    color: var(--hover-iconen);
+}
+
+
+/* vergelijk foto's */
+main article section:nth-of-type(7).vergelijkfotos>ul li a img {
+    width: 15em;
+}
+
+main article section:nth-of-type(7).vergelijkfotos>ul {
+    margin: 0;
+    padding: 0 1.5em;
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 2em;
+}
+
+main article section:nth-of-type(7).vergelijkfotos>ul li a p {
+    font-size: .7em;
+    margin: .5em 0 0 0;
+    padding: 0;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+}
+
+main article section:nth-of-type(7).vergelijkfotos>ul li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+main article section:nth-of-type(7).vergelijkfotos>ul li a:visited {
+    color: var(--main-color-text);
+}
+
+main article section:nth-of-type(7).vergelijkfotos>ul li a:hover {
+    color: var(--hover-iconen);
+}
+
+
+/* FOOTER */
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    padding: .3em;
+    background-color: var(--color-background);
+}
+
+
+footer button {
+    display: block;
+    width: 100%;
+    z-index: 6;
+    color: var(--header-color-logo-footer);
+    background-color: var(--color-background);
+    border: 1em var(--header-color-logo-footer);
+    margin: 1em 0;
+    padding: 1em;
+    cursor: pointer;
+    border: .1em solid var(--header-color-input-border);
+    border-radius: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+
+footer button:hover {
+    background-color: var(--header-color-input-border);
+    color: var(--color-background);
+    transition: .5s;
+}

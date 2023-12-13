@@ -1,73 +1,395 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerstpagina</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/stylekerst.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" width="13.503" height="23.619" viewBox="0 0 13.503 23.619">
-            <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z" transform="translate(-11.251 -6.194)"/>
-        </svg>    
-        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
-			<path id="Icon_ionic-md-search" data-name="Icon ionic-md-search" d="M23.731,21.471H22.5l-.462-.386a10.212,10.212,0,0,0,2.385-6.557A9.962,9.962,0,1,0,14.5,24.557a10.31,10.31,0,0,0,6.538-2.391l.461.386v1.234L29.192,31.5,31.5,29.186Zm-9.231,0a6.943,6.943,0,1,1,6.923-6.943A6.9,6.9,0,0,1,14.5,21.471Z" transform="translate(-4.5 -4.5)"/>
-		</svg>   
-        <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="31" viewBox="0 0 28 31">
-            <g id="Icon_feather-home" data-name="Icon feather-home" transform="translate(-4 -2.5)">
-              <path id="Path_1" data-name="Path 1" d="M4.5,13.5,18,3,31.5,13.5V30a3,3,0,0,1-3,3H7.5a3,3,0,0,1-3-3Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-              <path id="Path_2" data-name="Path 2" d="M13.5,33V18h9V33" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-            </g>
+
+        <a aria-label="terug" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13.503" height="23.619" viewBox="0 0 13.503 23.619">
+                <path id="Icon_ion-ios-arrow-back" data-name="Icon ion-ios-arrow-back"
+                    d="M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z"
+                    transform="translate(-11.251 -6.194)" />
             </svg>
         </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-		<path id="Icon_material-person" data-name="Icon material-person" d="M18,18a6,6,0,1,0-6-6A6,6,0,0,0,18,18Zm0,3c-4.005,0-12,2.01-12,6v3H30V27C30,23.01,22.005,21,18,21Z" transform="translate(-5.5 -5.5)" fill="none" stroke="#000" stroke-width="1"/>
-		</svg>
-		<a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35.875" height="35.875" viewBox="0 0 35.875 35.875">
-		<g id="Group_1" data-name="Group 1" transform="translate(0.5 0.5)">
-		<path id="Icon_awesome-question-circle" data-name="Icon awesome-question-circle" d="M35.438,18A17.438,17.438,0,1,1,18,.563,17.437,17.437,0,0,1,35.438,18ZM18.468,6.328a9.107,9.107,0,0,0-8.195,4.483.845.845,0,0,0,.191,1.143L12.9,13.8a.843.843,0,0,0,1.172-.149c1.256-1.593,2.117-2.517,4.029-2.517,1.436,0,3.213.924,3.213,2.317,0,1.053-.869,1.594-2.288,2.389-1.654.927-3.843,2.081-3.843,4.968v.281a.844.844,0,0,0,.844.844h3.938a.844.844,0,0,0,.844-.844V21c0-2,5.849-2.085,5.849-7.5C26.662,9.422,22.431,6.328,18.468,6.328ZM18,23.766A3.234,3.234,0,1,0,21.234,27,3.238,3.238,0,0,0,18,23.766Z" transform="translate(-0.563 -0.563)" fill="none" stroke="#000" stroke-width="1"/>
-		</g>
-		    </svg>
-        </a> 
-        <a href="#">
-		    <svg xmlns="http://www.w3.org/2000/svg" width="32.5" height="37" viewBox="0 0 32.5 37">
-		<path id="Icon_awesome-shopping-bag" data-name="Icon awesome-shopping-bag" d="M24.75,11.25V9a9,9,0,0,0-18,0v2.25H0V30.375A5.625,5.625,0,0,0,5.625,36h20.25A5.625,5.625,0,0,0,31.5,30.375V11.25ZM11.25,9a4.5,4.5,0,0,1,9,0v2.25h-9ZM22.5,17.438a1.688,1.688,0,1,1,1.688-1.687A1.687,1.687,0,0,1,22.5,17.438Zm-13.5,0a1.688,1.688,0,1,1,1.688-1.687A1.687,1.687,0,0,1,9,17.438Z" transform="translate(0.5 0.5)" fill="none" stroke="#000" stroke-width="1"/>
-		    </svg>
-        </a>
-    </header>
-    
-    <main>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32.355" height="28.348" viewBox="0 0 32.355 28.348">
-            <path id="Icon_feather-heart" data-name="Icon feather-heart" d="M31.26,6.915a8.25,8.25,0,0,0-11.67,0L18,8.505l-1.59-1.59A8.252,8.252,0,1,0,4.74,18.585l1.59,1.59L18,31.845l11.67-11.67,1.59-1.59a8.25,8.25,0,0,0,0-11.67Z" transform="translate(-1.823 -3.997)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </svg>
-        <h1>vilten kerstdecoratie met pepermuntstokje</h1>
-        <h2>3,99 €</h2>
-        <h3>incl. btw/verzendkosten niet inbegrepen</h3>
-        <li>
-            <ol>Hoogte: 9cm</ol>
-            <ol>Breedte: 5cm</ol>
-            <ol>Diepte: 1.5cm</ol>
-        </li>
-        <p>Vilten kerstversiering in de vorm van een pepermuntstokje.</p>
-        <a href="#">Productdetail</a>
-        <a href="#">Verzending en retour</a>
-        <a href="#">Beschikbaarheid in de winkel</a>
 
-        <h2>Maak de look af</h2>
-        <h3>4 artikelen</h3>
-        <img>
-        <h2>Kan u ook interesseren</h2>
-        <h3>8 artikelen</h3>
-        <img>
-        <h2>Vergelijkbare producten</h2>
-        <h3>14 artikelen</h3>
+        <h1 aria-label="welkom bij zara home">
+            <button>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 147.2 26"
+                    style="enable-background:new 0 0 147.2 26;" xml:space="preserve">
+                    <g>
+                        <path d="M64.5,24.9l-3.7-10.1L55.5,0.1h-0.3l-5.2,14.3c-1.2-1-2.8-1.6-4.9-1.9l-0.5-0.1l0.5-0.1c3.4-0.6,5.8-2.8,5.8-5.4
+		c0-3.6-3.4-6.1-8.2-6.1H32.1v0.4h3.3v18.4L28.3,0.1h-0.3l-9,24.7h0c-0.1,0-0.2,0-0.4,0c-0.2,0-0.4,0-0.5,0h-7.1l13.9-24H7.8v7.6
+		h0.3c0-3.6,2.1-7.2,6.8-7.2h5.3l-13.9,24h19V18H25c0,3.1-1.8,6.1-5.6,6.8l2.9-7.8h8.2l2.9,8h-2.7v0.3h10.9v-0.3h-2.5V12.7h3.4
+		c3.5,0,5.5,1.5,5.5,4.2v2.2c0,0.2,0,0.4,0,0.7l-1.8,5.1h-2.1v0.3h4.5v-0.3h-2.1l1.5-4.2l0,0.3l0,0.3c0.3,1.7,0.9,2.9,1.9,3.7
+		l0.1,0.1c0.8,0.5,1.8,0.8,2.9,0.8c1.5,0,2.4-0.4,3.2-1.2l-0.2-0.2c-0.7,0.7-1.4,1-2.1,1c-1.4,0-2-1.6-2-3.2v-3
+		c0-0.8-0.1-1.6-0.4-2.2v0h6.1l2.9,8h-2.8v0.3h9.5v-0.3L64.5,24.9L64.5,24.9z M22.4,16.6l4-11l4,11H22.4z M39.1,12.4V1.3h2.6
+		c3.5,0,5.3,1.9,5.3,5.8c0,4.2-1.1,5.3-4.5,5.3L39.1,12.4L39.1,12.4z M51.5,16.6c-0.3-0.6-0.7-1.2-1.1-1.7l-0.1-0.1l3.3-9.2l4,11
+		L51.5,16.6L51.5,16.6z" />
+                        <path d="M140.4,18.1c0,3.7-2.2,6.8-7.7,6.8h-4.1V12.8h1.5c2.8,0,4.4,1.5,4.4,3.8h0.3V8.5h-0.3c0,2.4-1.6,3.9-4.4,3.9h-1.5V1.2h4.2
+		c4.3,0,6,2.7,6,5.9h0.3V0.9h-21.7L111,19.7l-7-18.8h-7.2v0.4h3.1v9.1c-1.1-5.7-5.5-10-10.9-10c-5.4,0-9.8,4.2-10.9,9.9v-9h3.1V0.9
+		h-10v0.4h3.1v11.1h-9.9V1.2h3.1V0.9h-10v0.4h3.1v13.5l3.7,10.1V12.7h9.9v12.2h-3.1v0.3h10v-0.3H78v-9.1c1.1,5.7,5.5,9.9,10.9,9.9
+		c5.4,0,9.9-4.3,10.9-10v9.2h-3.6v0.3h7.5v-0.3h-3.6V1.3l9,24.5h0.1l8.2-23.8v22.8h-3.2v0.3h26.5v-7.1H140.4z M93.3,24
+		c-1.2,1-2.6,1.4-4.4,1.4c-1.8,0-3.2-0.4-4.4-1.4c-1.9-1.6-2.9-4.9-2.9-10.9s1-9.3,2.9-10.9c1.2-1,2.6-1.4,4.4-1.4s3.2,0.4,4.4,1.4
+		C95.1,3.7,96.2,7,96.2,13C96.2,19.1,95.1,22.4,93.3,24z M125,24.9h-3.8V1.3h3.8V24.9z" />
+                    </g>
+                </svg>
+            </button>
+        </h1>
+
+        <section>
+
+            <nav>
+                <label for="dark-mode">
+                    <input type="checkbox" id="dark-mode" name="dark-mode" value="dark-mode">
+                </label> 
+
+                <button aria-label="zoeken">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 27 27">
+                        <path id="Icon_ionic-md-search" data-name="Icon ionic-md-search"
+                            d="M23.731,21.471H22.5l-.462-.386a10.212,10.212,0,0,0,2.385-6.557A9.962,9.962,0,1,0,14.5,24.557a10.31,10.31,0,0,0,6.538-2.391l.461.386v1.234L29.192,31.5,31.5,29.186Zm-9.231,0a6.943,6.943,0,1,1,6.923-6.943A6.9,6.9,0,0,1,14.5,21.471Z"
+                            transform="translate(-4.5 -4.5)" />
+                    </svg>
+                </button>
+
+                <button aria-label="account">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path id="Icon_material-person" data-name="Icon material-person"
+                            d="M18,18a6,6,0,1,0-6-6A6,6,0,0,0,18,18Zm0,3c-4.005,0-12,2.01-12,6v3H30V27C30,23.01,22.005,21,18,21Z"
+                            transform="translate(-5.5 -5.5)" fill="none" stroke-width="1" />
+                    </svg>
+                </button>
+
+                <a aria-label="vragen" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.875" height="35.875" viewBox="0 0 35.875 35.875">
+                        <g id="Group_1" data-name="Group 1" transform="translate(0.5 0.5)">
+                            <path id="Icon_awesome-question-circle" data-name="Icon awesome-question-circle"
+                                d="M35.438,18A17.438,17.438,0,1,1,18,.563,17.437,17.437,0,0,1,35.438,18ZM18.468,6.328a9.107,9.107,0,0,0-8.195,4.483.845.845,0,0,0,.191,1.143L12.9,13.8a.843.843,0,0,0,1.172-.149c1.256-1.593,2.117-2.517,4.029-2.517,1.436,0,3.213.924,3.213,2.317,0,1.053-.869,1.594-2.288,2.389-1.654.927-3.843,2.081-3.843,4.968v.281a.844.844,0,0,0,.844.844h3.938a.844.844,0,0,0,.844-.844V21c0-2,5.849-2.085,5.849-7.5C26.662,9.422,22.431,6.328,18.468,6.328ZM18,23.766A3.234,3.234,0,1,0,21.234,27,3.238,3.238,0,0,0,18,23.766Z"
+                                transform="translate(-0.563 -0.563)" fill="none" stroke-width="1" />
+                        </g>
+                    </svg>
+                </a>
+
+                <a aria-label="winkelmandje" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.5" height="37" viewBox="0 0 32.5 37">
+                        <path id="Icon_awesome-shopping-bag" data-name="Icon awesome-shopping-bag"
+                            d="M24.75,11.25V9a9,9,0,0,0-18,0v2.25H0V30.375A5.625,5.625,0,0,0,5.625,36h20.25A5.625,5.625,0,0,0,31.5,30.375V11.25ZM11.25,9a4.5,4.5,0,0,1,9,0v2.25h-9ZM22.5,17.438a1.688,1.688,0,1,1,1.688-1.687A1.687,1.687,0,0,1,22.5,17.438Zm-13.5,0a1.688,1.688,0,1,1,1.688-1.687A1.687,1.687,0,0,1,9,17.438Z"
+                            transform="translate(0.5 0.5)" fill="none" stroke-width="1" />
+                    </svg>
+                </a>
+            </nav>
+        </section>
+
+        <section>
+            <nav>
+                <section>
+                    <form action="#">
+                        <input aria-label="voer hier in waar u naar op zoek bent" type="text"
+                            placeholder="waar bent u naar op zoek?">
+                    </form>
+                    <button aria-hidden="true" aria-label="sluit menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28.243" height="28.243"
+                            viewBox="0 0 28.243 28.243">
+                            <path id="Icon_akar-cross" data-name="Icon akar-cross" d="M30,30,6,6M30,6,6,30"
+                                transform="translate(-3.879 -3.879)" fill="none" stroke-linecap="round"
+                                stroke-width="3" />
+                        </svg>
+                    </button>
+                </section>
+
+                <h2>kan u ook interesseren</h2>
+
+                <section class="zoekfotos">
+                    <ul>
+                        <li aria-label="foto en link naar katoenenhanddoek">
+                            <a href="#"><img src="images/zoekenfoto1.jpeg" alt="katoenenhanddoek">
+                                <p>katoenen handdoek</p>
+                                <p>3,99 € - 19,99 €</p>
+                            </a>
+                        </li>
+                        <li aria-label="foto en link naar handdoek met geborduurde feston"><a href="#"><img
+                                    src="images/zoekenfoto2.jpeg" alt="handdoek met geborduurde feston">
+                                <p>handdoek met geborduurde feston</p>
+                                <p>5,99 € - 25,99 €</p>
+                            </a></li>
+                        <li aria-label="foto en link naar kegelvormig wijnglas met lijnen"><a href="#"><img
+                                    src="images/zoekenfoto3.jpeg" alt="kegelvormig wijnglas met lijnen">
+                                <p>kegelvormig wijnglas met lijnen</p>
+                                <p>6,99 €</p>
+                            </a></li>
+                        <li aria-label="foto en link naar geurkaars gingerbread"><a href="#"><img
+                                    src="images/zoekenfoto4.jpeg" alt="geurkaars gingerbread">
+                                <p>geurkaars gingerbread</p>
+                                <p>35,99 €</p>
+                            </a></li>
+                        <li aria-label="foto en link naar platbord van aardewerk"><a href="#"><img
+                                    src="images/zoekenfoto5.jpeg" alt="platbord van aardewerk">
+                                <p>platbord van aardewerk</p>
+                                <p>3,99 €</p>
+                            </a></li>
+                    </ul>
+                </section>
+
+            </nav>
+        </section>
+
+        <section>
+            <nav>
+                <section>
+                    <h2>geregistreerde klanten</h2>
+                    <button aria-hidden="true" aria-label="sluit menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28.243" height="28.243"
+                            viewBox="0 0 28.243 28.243">
+                            <path id="Icon_akar-cross" data-name="Icon akar-cross" d="M30,30,6,6M30,6,6,30"
+                                transform="translate(-3.879 -3.879)" fill="none" stroke-linecap="round"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </section>
+
+                <section>
+                    <p>Kunt u uw bestelling niet vinden? Misschien heeft u uw aankoop gedaan uzelf te registreren. Klik
+                        <a href="#">hier</a> en we vertellen u hoe u de bestelling kunt vinden.
+                    </p>
+
+                    <form action="#">
+                        <label>
+                            <input aria-label="voer uw markt in" type="text" placeholder="">
+                            <span>E-mail</span>
+                        </label>
+                    </form>
+
+                    <form action="#">
+                        <label>
+                            <input aria-label="voer uw markt in" type="text" placeholder="">
+                            <span>Wachtwoord</span>
+                        </label>
+                    </form>
+
+                    <a href="#">Bent u het wachtwoord vergeten?</a> 
+                    <button>inloggen</button>
+
+                    <h2>Nieuwe klanten</h2>
+                    <button>nieuw account aanmaken</button>
+                </section>
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="paddenstoelfotos">
+            <h2 class="visually-hidden">foto's van paddenstoelvormig viltje</h2>
+            <ul>
+                <li aria-label="foto van paddenstoel in context"><img src="images/paddenstoel1.jpeg"
+                        alt="paddenstoel foto 1"></li>
+                <li aria-label="foto van paddenstoel"><img src="images/paddenstoel2.jpeg" alt="paddenstoel foto 2"></li>
+                <li aria-label="foto van paddenstoel bovenaf"><img src="images/paddenstoel3.jpeg"
+                        alt="paddenstoel foto 3"></li>
+                <li aria-label="foto van paddenstoel bovenkant close up"><img src="images/paddenstoel4.jpeg"
+                        alt="paddenstoel foto 4"></li>
+                <li aria-label="foto van paddenstoel rechterbovenkant close up"><img src="images/paddenstoel5.jpeg"
+                        alt="paddenstoel foto 5"></li>
+                <li aria-label="foto van paddenstoel onderkant close up"><img src="images/paddenstoel6.jpeg"
+                        alt="paddenstoel foto 6"></li>
+            </ul>
+        </section>
+
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35" viewBox="0 0 32.355 28.348">
+                <path id="Icon_feather-heart" data-name="Icon feather-heart"
+                    d="M31.26,6.915a8.25,8.25,0,0,0-11.67,0L18,8.505l-1.59-1.59A8.252,8.252,0,1,0,4.74,18.585l1.59,1.59L18,31.845l11.67-11.67,1.59-1.59a8.25,8.25,0,0,0,0-11.67Z"
+                    transform="translate(-1.823 -3.997)" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1" />
+            </svg>
+        </button>
+
+        <article>
+            <h1>paddenstoelvormige vilten kerstdecoratie</h1>
+            <h2>4,99 €</h2>
+            <h3>incl. BTW/verzendkosten niet inbegrepen</h3>
+            <li>
+                <ol>Hoogte: 7cm</ol>
+                <ol>Breedte: 6cm</ol>
+                <ol>Diepte: 6cm</ol>
+            </li>
+            <p>Vilten kerstversiering in de vorm van een paddenstoel.</p>
+
+            <section>
+                <a href="#">Productdetail</a>
+                <a href="#">Verzending en retour</a>
+                <a href="#">Beschikbaarheid in de winkel</a>
+                <a href="#">Heeft u hulp nodig?</a>
+            </section>
+
+            <section>
+                <h2>Maak de look af</h2>
+                <h3>2 artikelen</h3>
+            </section>
+
+            <section class="maakaffotos">
+                <ul>
+                    <li aria-label="foto van drie vilten kerstballen"><a href="#"><img src="images/maakaf1.jpeg"
+                                alt="pack vilten kerstballen">
+                            <p>pack met vilten kerstballen (3-pack)</p>
+                            <p>15,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van vilten kerstdecoratie"><a href="#"><img src="images/maakaf2.jpeg"
+                                alt="vilten kerstdecoratie">
+                            <p>vilten kerstdecoratie met tartan sterren</p>
+                            <p>9,99 €</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Kan u ook interesseren</h2>
+                <h3>8 artikelen</h3>
+            </section>
+
+            <section class="interessefotos">
+                <ul>
+                    <li aria-label="foto van decoratieve vilten kerstwant"><a href="#"><img src="images/interesse1.jpeg"
+                                alt="decorative vilten kerstwant">
+                            <p>decoratieve vilten kerstwant</p>
+                            <p>5,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van decoratieve vilten kerstschaats"><a href="#"><img
+                                src="images/interesse2.jpeg" alt="decoratieve vilten kerstschaats">
+                            <p>decoratieve vilten kerstschaats</p>
+                            <p>5,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van decoratieve vilten kerstkoek"><a href="#"><img src="images/interesse3.jpeg"
+                                alt="decoratieve vilten kerstkoek">
+                            <p>decoratieve vilten kerstkoek</p>
+                            <p>5,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van velours kerstbal met strepen"><a href="#"><img src="images/interesse4.jpeg"
+                                alt="velours kerstbal met strepen">
+                            <p>velours kerstbal met strepen</p>
+                            <p>6,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van papier-maché kerstslinger met lichtjes"><a href="#"><img
+                                src="images/interesse5.jpeg" alt="papier-maché kerstslinger met lichtjes">
+                            <p>papier-maché kerstslinger met lichtjes</p>
+                            <p>29,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van pack met zuurstokvormige kerstdecoratie (2-pack)"><a href="#"><img
+                                src="images/interesse6.jpeg" alt="pack met zuurstokvormige kerstdecoratie (2-pack)">
+                            <p>pack met zuurstokvormige kerstdecoratie (2-pack)</p>
+                            <p>6,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van vilten kerstbal met konijn"><a href="#"><img src="images/interesse7.jpeg"
+                                alt="vilten kerstbal met konijn">
+                            <p>vilten kerstbal met konijn</p>
+                            <p>6,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van vilten kerstster"><a href="#"><img src="images/interesse8.jpeg"
+                                alt="vilten kerstster">
+                            <p>vilten kerstster</p>
+                            <p>6,99 €</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Vergelijkbare producten</h2>
+                <h3>10 artikelen</h3>
+            </section>
+
+            <section class="vergelijkfotos">
+                <ul>
+                    <li aria-label="foto van paddenstoelvormige vilten kerstdecoratie"><a href="#"><img
+                                src="images/vergelijk1.jpeg" alt="paddenstoelvormige vilten kerstdecoratie">
+                            <p>paddenstoelvormige vilten kerstdecoratie</p>
+                            <p>7,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van peervormige gemerceriseerde glazen kerstdecoratie"><a href="#"><img
+                                src="images/vergelijk2.jpeg" alt="peervormige gemerceriseerde glazen kerstdecoratie">
+                            <p>peervormige gemerceriseerde glazen kerstdecoratie</p>
+                            <p>15,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van glanzende kerstbal"><a href="#"><img src="images/vergelijk3.jpeg"
+                                alt="glanzende kerstbal">
+                            <p>glanzende kerstbal</p>
+                            <p>4,99 € - 6,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van tartan kerstbal"><a href="#"><img src="images/vergelijk4.jpeg"
+                                alt="tartan kerstbal">
+                            <p>tartan kerstbal</p>
+                            <p>5,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van peervormige kersthanger met glitter"><a href="#"><img
+                                src="images/vergelijk5.jpeg" alt="peervormige kersthanger met glitter">
+                            <p>peervormige kersthanger met glitter</p>
+                            <p>4,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van gestreepte kerstbal"><a href="#"><img src="images/vergelijk6.jpeg"
+                                alt="gestreepte kerstbal">
+                            <p>gestreepte kerstbal</p>
+                            <p>3,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van pack met decoratieve kerstbelletjes (3-pack)"><a href="#"><img
+                                src="images/vergelijk7.jpeg" alt="pack met decoratieve kerstbelletjes (3-pack)">
+                            <p>pack met decoratieve kerstbelletjes (3-pack)</p>
+                            <p>12,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van bamboe kerstbal"><a href="#"><img src="images/vergelijk8.jpeg"
+                                alt="bamboe kerstbal">
+                            <p>bamboe kerstbal</p>
+                            <p>9,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van craquelé kerstbal"><a href="#"><img src="images/vergelijk9.jpeg"
+                                alt="craquelé kerstbal">
+                            <p>craquelé kerstbal</p>
+                            <p>7,99 €</p>
+                        </a>
+                    </li>
+                    <li aria-label="foto van pack met decoratieve kerstballen (6-pack)"><a href="#"><img
+                                src="images/vergelijk10.jpeg" alt="cpack met decoratieve kerstballen (6-pack)">
+                            <p>pack met decoratieve kerstballen (6-pack)</p>
+                            <p>15,99 €</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </article>
     </main>
 
     <footer>
-
+        <button>aan winkelmand toevoegen</button>
     </footer>
+
+    <script defer src="scripts/scriptkerst.js"></script>
 </body>
+
 </html>

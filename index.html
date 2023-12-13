@@ -6,15 +6,16 @@
 	<meta name="author" content="roos">
 	<meta name="viewport" content="width=375px, initial-scale=1">
 
-	<title>ZaraHome startpagina</title>
+	<title>ZaraHome Nederland</title>
 
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/stylehome.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
 	<header>
-		<button>
+		<button aria-label="hamburgermenu">
 			<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 230.855 209.868">
 				<path id="Icon_core-hamburger-menu" data-name="Icon core-hamburger-menu"
 					d="M5.625,6.75H236.48V27.737H5.625Zm0,94.441H236.48v20.987H5.625Zm0,94.441H236.48v20.987H5.625Z"
@@ -22,7 +23,7 @@
 			</svg>
 		</button>
 
-		
+
 
 		<h1 aria-label="welkom bij zara home">
 			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -46,14 +47,18 @@
 			</svg>
 		</h1>
 
+		<label aria-label="donkere modus" for="dark-mode">
+			<input type="checkbox" id="dark-mode" name="dark-mode" value="dark-mode">
+		</label>
+
 		<nav>
-			<button aria-hidden="true">
+			<button aria-hidden="true" aria-label="sluit menu">
 				<svg xmlns="http://www.w3.org/2000/svg" width="28.243" height="28.243" viewBox="0 0 28.243 28.243">
 					<path id="Icon_akar-cross" data-name="Icon akar-cross" d="M30,30,6,6M30,6,6,30"
 						transform="translate(-3.879 -3.879)" fill="none" stroke-linecap="round" stroke-width="3" />
 				</svg>
 			</button>
-			<a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+			<a href="#" aria-label="logo zara"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 147.2 26"
 					style="enable-background:new 0 0 147.2 26;" xml:space="preserve">
 					<g>
@@ -75,30 +80,31 @@
 				</svg></a>
 
 			<ul>
-				<li><a href="#">nieuwe items</a></li></br>
-				<li><a href="kerst.html">kerst</a></li>
-				<li><a href="#">cadeaus</a></li></br>
-				<li><a href="#">meubels</a></li>
-				<li><a href="#">slaapkamer</a></li>
-				<li><a href="#">kleding & schoenen</a></li>
-				<li><a href="#">woonkamer</a></li>
-				<li><a href="#">keuken</a></li>
-				<li><a href="#">eetkamer</a></li>
-				<li><a href="#">badkamer</a></li>
-				<li><a href="#">geurtjes</a></li>
-				<li><a href="#">kinderen</a></li>
-				<li><a href="#">baby</a></li></br>
-				<li><a href="#">studio nicholson</a></li>
-				<li><a href="#">speelgoed</a></li>
-				<li><a href="#">music collection</a></li>
-				<li><a href="#">editions</a></li>
-				<li><a href="#">dierencollectie</a></li>
-				<li><a href="#">thuiskantoor</a></li>
-				<li><a href="#">kleedkamer</a></li></br>
-				<li><a href="#">special prices</a></li></br>
-				<li><a href="#"><svg version="1.1" id="ART" xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 868.68 223.44"
-							style="enable-background:new 0 0 868.68 223.44;" xml:space="preserve">
+				<li aria-label="link naar pagina nieuwe items"><a href="#">nieuwe items</a></li></br>
+				<li aria-label="link naar pagina kerst"><a href="kerst.html">kerst</a></li>
+				<li aria-label="link naar pagina cadeaus"><a href="#">cadeaus</a></li></br>
+				<li aria-label="link naar pagina meubels"><a href="#">meubels</a></li>
+				<li aria-label="link naar pagina slaapkamer"><a href="#">slaapkamer</a></li>
+				<li aria-label="link naar pagina kleding en schoenen"><a href="#">kleding & schoenen</a></li>
+				<li aria-label="link naar pagina woonkamer"><a href="#">woonkamer</a></li>
+				<li aria-label="link naar pagina keuken"><a href="#">keuken</a></li>
+				<li aria-label="link naar pagina eetkamer"><a href="#">eetkamer</a></li>
+				<li aria-label="link naar pagina badkamer"><a href="#">badkamer</a></li>
+				<li aria-label="link naar pagina geurtjes"><a href="#">geurtjes</a></li>
+				<li aria-label="link naar pagina kinderen"><a href="#">kinderen</a></li>
+				<li aria-label="link naar pagina baby"><a href="#">baby</a></li></br>
+				<li aria-label="link naar pagina studie nicholson"><a href="#">studio nicholson</a></li>
+				<li aria-label="link naar pagina speelgoed"><a href="#">speelgoed</a></li>
+				<li aria-label="link naar pagina music collection"><a href="#">music collection</a></li>
+				<li aria-label="link naar pagina editions"><a href="#">editions</a></li>
+				<li aria-label="link naar pagina dierencollectie"><a href="#">dierencollectie</a></li>
+				<li aria-label="link naar pagina thuiskantoor"><a href="#">thuiskantoor</a></li>
+				<li aria-label="link naar pagina kleedkamer"><a href="#">kleedkamer</a></li></br>
+				<li aria-label="link naar pagina special prices"><a href="#">special prices</a></li></br>
+				<li aria-label="link naar pagina zara home by vincent van duysen"><a href="#"><svg version="1.1"
+							id="ART" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px" y="0px" viewBox="0 0 868.68 223.44" style="enable-background:new 0 0 868.68 223.44;"
+							xml:space="preserve">
 							<style type="text/css">
 								.st0 {
 									fill: #C6C9CA;
@@ -167,17 +173,17 @@
 								</g>
 							</g>
 						</svg></a></li></br>
-				<li><a href="#">inspiration</a></li>
-				<li><a href="#">recepten</a></li></br>
-				<li><a href="#">join life</a></li></br>
-				<li><a href="#">+info</a></li>
+				<li aria-label="link naar pagina inspiration"><a href="#">inspiration</a></li>
+				<li aria-label="link naar pagina recepten"><a href="#">recepten</a></li></br>
+				<li aria-label="link naar pagina join life"><a href="#">join life</a></li></br>
+				<li aria-label="link naar pagina informatie"><a href="#">+info</a></li>
 			</ul>
 		</nav>
 
 		<section>
 
 			<nav>
-				<button>
+				<button aria-label="zoeken">
 					<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
 						<path id="Icon_ionic-md-search" data-name="Icon ionic-md-search"
 							d="M23.731,21.471H22.5l-.462-.386a10.212,10.212,0,0,0,2.385-6.557A9.962,9.962,0,1,0,14.5,24.557a10.31,10.31,0,0,0,6.538-2.391l.461.386v1.234L29.192,31.5,31.5,29.186Zm-9.231,0a6.943,6.943,0,1,1,6.923-6.943A6.9,6.9,0,0,1,14.5,21.471Z"
@@ -185,7 +191,7 @@
 					</svg>
 				</button>
 
-				<button>
+				<button aria-label="account">
 					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
 						<path id="Icon_material-person" data-name="Icon material-person"
 							d="M18,18a6,6,0,1,0-6-6A6,6,0,0,0,18,18Zm0,3c-4.005,0-12,2.01-12,6v3H30V27C30,23.01,22.005,21,18,21Z"
@@ -193,8 +199,7 @@
 					</svg>
 				</button>
 
-
-				<a href="#">
+				<a aria-label="vragen" href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" width="35.875" height="35.875" viewBox="0 0 35.875 35.875">
 						<g id="Group_1" data-name="Group 1" transform="translate(0.5 0.5)">
 							<path id="Icon_awesome-question-circle" data-name="Icon awesome-question-circle"
@@ -203,13 +208,108 @@
 						</g>
 					</svg>
 				</a>
-				<a href="#">
+				<a aria-label="winkelmandje" href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32.5" height="37" viewBox="0 0 32.5 37">
 						<path id="Icon_awesome-shopping-bag" data-name="Icon awesome-shopping-bag"
 							d="M24.75,11.25V9a9,9,0,0,0-18,0v2.25H0V30.375A5.625,5.625,0,0,0,5.625,36h20.25A5.625,5.625,0,0,0,31.5,30.375V11.25ZM11.25,9a4.5,4.5,0,0,1,9,0v2.25h-9ZM22.5,17.438a1.688,1.688,0,1,1,1.688-1.687A1.687,1.687,0,0,1,22.5,17.438Zm-13.5,0a1.688,1.688,0,1,1,1.688-1.687A1.687,1.687,0,0,1,9,17.438Z"
 							transform="translate(0.5 0.5)" fill="none" stroke-width="1" />
 					</svg>
 				</a>
+			</nav>
+		</section>
+
+		<section>
+			<nav>
+				<section>
+					<form action="#">
+						<input aria-label="voer hier in waar u naar op zoek bent" type="text"
+							placeholder="waar bent u naar op zoek?">
+					</form>
+					<button aria-hidden="true" aria-label="sluit menu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="28.243" height="28.243"
+							viewBox="0 0 28.243 28.243">
+							<path id="Icon_akar-cross" data-name="Icon akar-cross" d="M30,30,6,6M30,6,6,30"
+								transform="translate(-3.879 -3.879)" fill="none" stroke-linecap="round"
+								stroke-width="3" />
+						</svg>
+					</button>
+				</section>
+
+				<h2 aria-label="kan u ook interesseren">kan u ook interesseren</h2>
+
+				<section class="zoekfotos">
+					<ul>
+						<li aria-label="foto en link naar katoenenhanddoek">
+							<a href="#"><img src="images/zoekenfoto1.jpeg" alt="katoenenhanddoek">
+								<p>katoenen handdoek</p>
+								<p>3,99 € - 19,99 €</p>
+							</a>
+						</li>
+						<li aria-label="foto en link naar handdoek met geborduurde feston"><a href="#"><img
+									src="images/zoekenfoto2.jpeg" alt="handdoek met geborduurde feston">
+								<p>handdoek met geborduurde feston</p>
+								<p>5,99 € - 25,99 €</p>
+							</a></li>
+						<li aria-label="foto en link naar kegelvormig wijnglas met lijnen"><a href="#"><img
+									src="images/zoekenfoto3.jpeg" alt="kegelvormig wijnglas met lijnen">
+								<p>kegelvormig wijnglas met lijnen</p>
+								<p>6,99 €</p>
+							</a></li>
+						<li aria-label="foto en link naar geurkaars gingerbread"><a href="#"><img
+									src="images/zoekenfoto4.jpeg" alt="geurkaars gingerbread">
+								<p>geurkaars gingerbread</p>
+								<p>35,99 €</p>
+							</a></li>
+						<li aria-label="foto en link naar platbord van aardewerk"><a href="#"><img
+									src="images/zoekenfoto5.jpeg" alt="platbord van aardewerk">
+								<p>platbord van aardewerk</p>
+								<p>3,99 €</p>
+							</a></li>
+					</ul>
+				</section>
+
+			</nav>
+		</section>
+
+		<section>
+			<nav>
+				<section>
+					<h2 aria-label="geregistreerde klanten">geregistreerde klanten</h2>
+					<button aria-hidden="true" aria-label="sluit menu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="28.243" height="28.243"
+							viewBox="0 0 28.243 28.243">
+							<path id="Icon_akar-cross" data-name="Icon akar-cross" d="M30,30,6,6M30,6,6,30"
+								transform="translate(-3.879 -3.879)" fill="none" stroke-linecap="round"
+								stroke-width="2" />
+						</svg>
+					</button>
+				</section>
+
+				<section>
+					<p>Kunt u uw bestelling niet vinden? Misschien heeft u uw aankoop gedaan uzelf te registreren. Klik
+						<a aria-label="hier klikken om te weten hoe u uw bestelling kan vinden" href="#">hier</a> en we vertellen u hoe u de bestelling kunt vinden.
+					</p>
+
+					<form action="#">
+						<label>
+							<input aria-label="voer uw e-mailadres in" type="text" placeholder="">
+							<span>E-mail</span>
+						</label>
+					</form>
+
+					<form action="#">
+						<label>
+							<input aria-label="voer uw wachtwoord in" type="text" placeholder="">
+							<span>Wachtwoord</span>
+						</label>
+					</form>
+
+					<a aria-label="wachtwoord vergeten" href="#">Bent u het wachtwoord vergeten?</a>
+					<button aria-label="inlogknop">inloggen</button>
+
+					<h2>Nieuwe klanten</h2>
+					<button aria-label="nieuw account aanmaken">nieuw account aanmaken</button>
+				</section>
 			</nav>
 		</section>
 
@@ -222,6 +322,9 @@
 				<li aria-label="foto van keukeninspiratie"><img src="images/inspiration.jpeg" alt="inspirations"></li>
 				<li aria-label="foto van nieuwe items"><img src="images/nieuweitems.jpeg" alt="nieuweitems"></li>
 				<li aria-label="foto van kerst"><img src="images/kerst.jpeg" alt="kerst"></li>
+				<li aria-label="video van kerst"><video controls loop muted>
+						<source src="images/videomain.mp4" type="video/mp4">
+					</video></li>
 				<li aria-label="foto van een bed"><img src="images/editions.jpeg" alt=""></li>
 				<li aria-label="foto van snijbord met eten"><img src="images/recepten.jpeg" alt=""></li>
 				<li aria-label="foto van tuin"><img src="images/zarahomeplus.jpeg" alt=""></li>
@@ -234,16 +337,17 @@
 			<h2 class="visually-hidden">mag ook weg</h2>
 			<form action="#">
 
-				<input type="email" placeholder="ontvang onze newsletter - voer uw e-mailadres in">
+				<input aria-label="voer e-mailadres in voor nieuwsbrief" type="email"
+					placeholder="ontvang onze newsletter - voer uw e-mailadres in">
 			</form>
 		</section>
 
 
 		<section>
-			<h2>Volg ons</h2>
+			<h2 aria-label="volg ons op sociale media">Volg ons</h2>
 			<nav>
 				<ul>
-					<li><a href="#">
+					<li aria-label="link naar facebook"><a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="170.581" height="318.494"
 								viewBox="0 0 170.581 318.494">
 								<path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
@@ -251,7 +355,7 @@
 									transform="translate(-1.609)" />
 							</svg>
 						</a></li>
-					<li>
+					<li aria-label="link naar instagram">
 						<a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="185.935" height="185.893"
 								viewBox="0 0 185.935 185.893">
@@ -261,7 +365,7 @@
 							</svg>
 						</a>
 					</li>
-					<li><a href="#">
+					<li aria-label="link naar pinteret"><a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="176.613" height="229.555"
 								viewBox="0 0 176.613 229.555">
 								<path id="Icon_awesome-pinterest-p" data-name="Icon awesome-pinterest-p"
@@ -269,7 +373,7 @@
 									transform="translate(0 -0.457)" />
 							</svg>
 						</a></li>
-					<li><a href="#">
+					<li aria-label="link naar youtube"><a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="184.296" height="131.584"
 								viewBox="0 0 184.296 131.584">
 								<g id="Group_1" data-name="Group 1" transform="translate(-377.122 -153.766)">
@@ -278,19 +382,19 @@
 										transform="translate(379.123 151.266)" fill="none" stroke="#000"
 										stroke-linecap="round" stroke-linejoin="round" stroke-width="7" />
 									<path id="Path_2" data-name="Path 2" d="M14.625,65.423,60.961,39.071,14.625,12.72Z"
-										transform="translate(436.514 180.649)" stroke="#000" stroke-linecap="round"
+										transform="translate(436.514 180.649)" stroke-linecap="round"
 										stroke-linejoin="round" stroke-width="3" />
 								</g>
 							</svg>
 						</a></li>
-					<li><a href="#">
+					<li aria-label="link naar twitter"><a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="36" height="29.239" viewBox="0 0 36 29.239">
 								<path id="Icon_awesome-twitter" data-name="Icon awesome-twitter"
 									d="M32.3,10.668c.023.32.023.64.023.959,0,9.754-7.424,20.992-20.992,20.992A20.85,20.85,0,0,1,0,29.307a15.263,15.263,0,0,0,1.782.091,14.776,14.776,0,0,0,9.16-3.152,7.391,7.391,0,0,1-6.9-5.117,9.3,9.3,0,0,0,1.393.114,7.8,7.8,0,0,0,1.942-.251,7.379,7.379,0,0,1-5.916-7.241V13.66A7.431,7.431,0,0,0,4.8,14.6,7.389,7.389,0,0,1,2.513,4.728a20.972,20.972,0,0,0,15.213,7.721,8.329,8.329,0,0,1-.183-1.69A7.385,7.385,0,0,1,30.312,5.711a14.526,14.526,0,0,0,4.683-1.782,7.358,7.358,0,0,1-3.244,4.066A14.791,14.791,0,0,0,36,6.853a15.86,15.86,0,0,1-3.7,3.815Z"
 									transform="translate(0 -3.381)" />
 							</svg>
 						</a></li>
-					<li><a href="#">
+					<li aria-label="link naar spotify"><a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="34.875" height="34.875"
 								viewBox="0 0 34.875 34.875">
 								<path id="Icon_awesome-spotify" data-name="Icon awesome-spotify"
@@ -299,7 +403,7 @@
 							</svg>
 						</a>
 					</li>
-					<li><a href="#">
+					<li aria-label="link naar tiktok"><a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="31.276" height="36" viewBox="0 0 31.276 36">
 								<path id="Icon_simple-tiktok" data-name="Icon simple-tiktok"
 									d="M18.8.03C20.76,0,22.71.015,24.66,0a9.343,9.343,0,0,0,2.625,6.255,10.578,10.578,0,0,0,6.36,2.685v6.045a16.055,16.055,0,0,1-6.3-1.455,18.533,18.533,0,0,1-2.43-1.4c-.015,4.38.015,8.76-.03,13.125a11.457,11.457,0,0,1-2.025,5.91A11.175,11.175,0,0,1,14,35.985a10.937,10.937,0,0,1-6.12-1.545A11.311,11.311,0,0,1,2.4,25.875c-.03-.75-.045-1.5-.015-2.235a11.292,11.292,0,0,1,13.1-10.02c.03,2.22-.06,4.44-.06,6.66a5.147,5.147,0,0,0-6.57,3.18,5.95,5.95,0,0,0-.21,2.415,5.105,5.105,0,0,0,5.25,4.305,5.039,5.039,0,0,0,4.155-2.415,3.461,3.461,0,0,0,.615-1.59c.15-2.685.09-5.355.1-8.04C18.78,12.09,18.75,6.06,18.8.03Z"
@@ -312,16 +416,16 @@
 
 
 		<section>
-			<h2>Download onze app</h2>
+			<h2 aria-label="download de zara app">Download onze app</h2>
 			<nav>
-				<a href="#">
+				<a aria-label="app voor iOs gebruikers" href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" width="26.466" height="31.494" viewBox="0 0 26.466 31.494">
 						<path id="Icon_awesome-apple" data-name="Icon awesome-apple"
 							d="M22.409,18.893a6.564,6.564,0,0,1,3.516-5.962,7.555,7.555,0,0,0-5.955-3.136c-2.5-.2-5.224,1.455-6.223,1.455-1.055,0-3.473-1.385-5.372-1.385C4.451,9.928.281,12.994.281,19.23A17.525,17.525,0,0,0,1.294,24.94c.9,2.58,4.148,8.909,7.538,8.8,1.772-.042,3.023-1.259,5.33-1.259,2.236,0,3.4,1.259,5.372,1.259,3.417-.049,6.356-5.8,7.214-8.388a6.97,6.97,0,0,1-4.338-6.462ZM18.429,7.348a6.622,6.622,0,0,0,1.688-5.1A7.456,7.456,0,0,0,15.342,4.7a6.726,6.726,0,0,0-1.8,5.055,5.905,5.905,0,0,0,4.887-2.412Z"
 							transform="translate(-0.281 -2.25)" />
 					</svg>
 				</a>
-				<a href="#">
+				<a aria-label="app voor android gebruikers" href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" width="27" height="31.488" viewBox="0 0 27 31.488">
 						<path id="Icon_awesome-android" data-name="Icon awesome-android"
 							d="M6.3,14.379v8.142a1.927,1.927,0,0,1-1.934,1.948A2.1,2.1,0,0,1,2.25,22.521V14.379a2.1,2.1,0,0,1,2.116-1.934A1.942,1.942,0,0,1,6.3,14.379Zm.759,11.039A2.077,2.077,0,0,0,9.141,27.5h1.4l.021,4.3a1.941,1.941,0,0,0,3.881,0V27.5h2.616v4.3a1.951,1.951,0,0,0,3.9,0V27.5h1.42a2.074,2.074,0,0,0,2.067-2.081V12.8H7.059V25.418ZM24.5,12.122H6.982a7.9,7.9,0,0,1,4.472-6.989L10.111,2.651a.271.271,0,1,1,.471-.267l1.364,2.5a9.5,9.5,0,0,1,7.615,0l1.357-2.5a.271.271,0,1,1,.471.267L20.046,5.133A7.921,7.921,0,0,1,24.5,12.122Zm-12-3.9a.738.738,0,0,0-.738-.738.739.739,0,0,0,0,1.477A.738.738,0,0,0,12.495,8.22Zm7.973,0a.728.728,0,1,0-.717.738A.734.734,0,0,0,20.468,8.22Zm6.666,4.226A1.928,1.928,0,0,0,25.2,14.379v8.142a1.94,1.94,0,0,0,1.934,1.948,2.094,2.094,0,0,0,2.116-1.948V14.379A2.082,2.082,0,0,0,27.134,12.445Z"
@@ -334,22 +438,94 @@
 		<section>
 			<h2 class="visually-hidden">nog zo een die weg moet</h2>
 			<nav>
-				<a href="#">beleid</a>
-				<a href="#">bedrijf</a>
-				<a href="#">klantenservice/contact</a>
+				<a aria-label="link naar beleid pagina" href="#">beleid</a>
+				<a aria-label="link naar bedrijf pagina" href="#">bedrijf</a>
+				<a aria-label="link naar klantenservice en contact pagina" href="#">klantenservice/contact</a>
 			</nav>
 		</section>
 
-		<section>
-			<h2 class="visually-hidden">en hopla nog een</h2>
-			<button>
+		<section aria-label="klik om taal te veranderen">
+			<h2 class="visually-hidden">taalkeuze</h2>
+
+			<button aria-label="wereldbolknop">
 				<svg xmlns="http://www.w3.org/2000/svg" width="29.257" height="29.25" viewBox="0 0 29.257 29.25">
 					<path id="Icon_ionic-ios-globe" data-name="Icon ionic-ios-globe"
 						d="M18,3.375h-.049a14.625,14.625,0,0,0,.007,29.25h.049A14.625,14.625,0,1,0,18,3.375ZM30.67,17.016H25.214a27.689,27.689,0,0,0-.689-5.358,21.42,21.42,0,0,0,3.495-1.477A12.6,12.6,0,0,1,30.67,17.016Zm-13.655,0H12.67a24.992,24.992,0,0,1,.619-4.859,21.392,21.392,0,0,0,3.727.5Zm0,1.969v4.352a21.482,21.482,0,0,0-3.727.5,24.989,24.989,0,0,1-.619-4.852Zm1.969,0h4.31a24.845,24.845,0,0,1-.619,4.845,20.988,20.988,0,0,0-3.691-.492Zm0-1.969V12.656a21.483,21.483,0,0,0,3.691-.492,24.919,24.919,0,0,1,.619,4.852Zm7.692-8.29A19.533,19.533,0,0,1,24,9.816a14.518,14.518,0,0,0-1.863-3.832A12.724,12.724,0,0,1,26.677,8.726Zm-4.528,1.6a19.788,19.788,0,0,1-3.164.422V5.583C20.18,6.23,21.347,7.966,22.148,10.322ZM17.016,5.555v5.182a19.447,19.447,0,0,1-3.2-.429C14.632,7.931,15.813,6.195,17.016,5.555ZM13.809,6a14.632,14.632,0,0,0-1.849,3.8A19.973,19.973,0,0,1,9.323,8.726,12.533,12.533,0,0,1,13.809,6ZM7.98,10.188a21,21,0,0,0,3.459,1.462,26.573,26.573,0,0,0-.689,5.358H5.337A12.532,12.532,0,0,1,7.98,10.188Zm-2.651,8.8h5.414a27.618,27.618,0,0,0,.689,5.358A22.277,22.277,0,0,0,7.973,25.8,12.6,12.6,0,0,1,5.33,18.984Zm3.987,8.29a19.678,19.678,0,0,1,2.644-1.083A14.684,14.684,0,0,0,13.809,30,12.845,12.845,0,0,1,9.316,27.274Zm4.5-1.589a19.549,19.549,0,0,1,3.2-.429v5.189C15.806,29.805,14.632,28.062,13.816,25.685Zm5.168,4.732V25.249a19.788,19.788,0,0,1,3.164.422C21.347,28.034,20.18,29.77,18.984,30.417Zm3.164-.4a14.518,14.518,0,0,0,1.863-3.832,19.211,19.211,0,0,1,2.672,1.1A12.87,12.87,0,0,1,22.148,30.016Zm5.871-4.2a21.42,21.42,0,0,0-3.495-1.477,27.545,27.545,0,0,0,.689-5.351H30.67A12.542,12.542,0,0,1,28.02,25.812Z"
 						transform="translate(-3.375 -3.375)" />
 				</svg>
+				nederland / nederlands
 			</button>
-			<h2>nederland / nederlands</h2>
+
+
+			<nav>
+				<section>
+					<button aria-hidden="true" aria-label="sluit menu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="28.243" height="28.243"
+							viewBox="0 0 28.243 28.243">
+							<path id="Icon_akar-cross" data-name="Icon akar-cross" d="M30,30,6,6M30,6,6,30"
+								transform="translate(-3.879 -3.879)" fill="none" stroke-linecap="round"
+								stroke-width="3" />
+						</svg>
+					</button>
+					<h2>markten en taal</h2>
+				</section>
+
+				<section>
+					<form action="#">
+						<label>
+							<input aria-label="voer uw markt in" type="text" placeholder="">
+							<span>Vind uw markt</span>
+						</label>
+
+
+						<button aria-label="zoeken">
+							<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+								<path id="Icon_ionic-md-search" data-name="Icon ionic-md-search"
+									d="M23.731,21.471H22.5l-.462-.386a10.212,10.212,0,0,0,2.385-6.557A9.962,9.962,0,1,0,14.5,24.557a10.31,10.31,0,0,0,6.538-2.391l.461.386v1.234L29.192,31.5,31.5,29.186Zm-9.231,0a6.943,6.943,0,1,1,6.923-6.943A6.9,6.9,0,0,1,14.5,21.471Z"
+									transform="translate(-4.5 -4.5)" />
+							</svg>
+						</button>
+					</form>
+
+
+				</section>
+
+				<ul>
+					<li><a aria-label="Nederland" href="#">Nederland</a></li>
+					<li><a aria-label="Nederlands" href="#">Nederlands</a></li>
+					<li><a aria-label="English" href="#">English</a></li>
+					<li><a aria-label="New Caledonia" href="#">New caledonia</a></li>
+					<li><a aria-label="new zealand" href="#">New Zealand</a></li>
+					<li><a aria-label="niger" href="#">Niger</a></li>
+					<li><a aria-label="niue" href="#">Niue</a></li>
+					<li><a aria-label="norge / norway" href="#">Norge / Norway</a></li>
+					<li><a aria-label="Nederland" href="#">Nederland</a></li>
+					<li><a aria-label="Nederlands" href="#">Nederlands</a></li>
+					<li><a aria-label="English" href="#">English</a></li>
+					<li><a aria-label="New Caledonia" href="#">New caledonia</a></li>
+					<li><a aria-label="new zealand" href="#">New Zealand</a></li>
+					<li><a aria-label="niger" href="#">Niger</a></li>
+					<li><a aria-label="niue" href="#">Niue</a></li>
+					<li><a aria-label="norge / norway" href="#">Norge / Norway</a></li>
+					<li><a aria-label="Nederland" href="#">Nederland</a></li>
+					<li><a aria-label="Nederlands" href="#">Nederlands</a></li>
+					<li><a aria-label="English" href="#">English</a></li>
+					<li><a aria-label="New Caledonia" href="#">New caledonia</a></li>
+					<li><a aria-label="new zealand" href="#">New Zealand</a></li>
+					<li><a aria-label="niger" href="#">Niger</a></li>
+					<li><a aria-label="niue" href="#">Niue</a></li>
+					<li><a aria-label="norge / norway" href="#">Norge / Norway</a></li>
+					<li><a aria-label="Nederland" href="#">Nederland</a></li>
+					<li><a aria-label="Nederlands" href="#">Nederlands</a></li>
+					<li><a aria-label="English" href="#">English</a></li>
+					<li><a aria-label="New Caledonia" href="#">New caledonia</a></li>
+					<li><a aria-label="new zealand" href="#">New Zealand</a></li>
+					<li><a aria-label="niger" href="#">Niger</a></li>
+					<li><a aria-label="niue" href="#">Niue</a></li>
+					<li><a aria-label="norge / norway" href="#">Norge / Norway</a></li>
+				</ul>
+			</nav>
+
 		</section>
 	</footer>
 
